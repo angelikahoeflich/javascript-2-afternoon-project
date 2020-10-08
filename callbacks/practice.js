@@ -113,7 +113,16 @@ contains(names, 'Colt', function(result){
   Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
 */
 
-//Code Here
+function uniq(array, cb){
+  let newArray= [];
+  for (let i=0; i < array.length; i++){
+    if (!newArray.includes(array[i])){
+      array.push([newArray[i]])
+    }
+  }
+
+  cb(newArray)
+}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
@@ -130,7 +139,9 @@ uniq(names, function(uniqArr){
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-//Code Here 
+function each(array, cb){
+
+}
 
 // Do not edit the code below.
 each(names, function(item, indice){
