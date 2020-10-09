@@ -153,4 +153,10 @@ methodCollection.logHello();
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard (cardNumber, expirationDate, securityCode){
+    return {
+      cardNumber: cardNumber,
+      expirationDate: expirationDate,
+      securityCode: securityCode
+    }
+}
